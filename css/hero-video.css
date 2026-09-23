@@ -1,0 +1,107 @@
+
+.hero-video-section {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 8%;
+    background-color: #0b0f19;
+}
+
+.hero-video-section .bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-video-section .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(8, 12, 22, 0.75);
+    z-index: 2;
+}
+
+.hero-video-section .hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 650px;
+}
+
+.hero-video-section .hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+    color: #ffffff;
+}
+
+.hero-video-section .hero-description {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #a1a1aa;
+    margin-bottom: 40px;
+}
+
+.hero-video-section .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.hero-video-section .btn-hero-secondary {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero-video-section .btn-hero-primary {
+    background-color: #FF2D55;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 28px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-video-section .btn-hero-primary:hover {
+    background-color: #b31f3a;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .hero-video-section .hero-title {
+        font-size: 2.25rem;
+    }
+
+    .hero-video-section .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-video-section .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
