@@ -1,0 +1,161 @@
+
+.how-section {
+  width: 100%;
+  background-color: #FBFCFC;
+  padding: 80px 24px;
+}
+
+.process-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.process-header .tag {
+  color: #ff2d55;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.process-header h2 {
+  color: #0f172a;
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.process-header p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.steps-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  max-width: 170px;
+}
+
+.icon-wrapper-step {
+  position: relative;
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.step-number {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: #ffe4e8;
+  color: #ff2d55;
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.icon-box-step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f172a;
+  position: relative;
+  z-index: 1;
+  padding: 4px;
+}
+
+.icon-box-step svg {
+  width: 36px;
+  height: 36px;
+}
+
+.step-title {
+  color: #0f172a;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.step-description {
+  color: #64748b;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.step-arrow {
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  padding: 0 10px;
+}
+
+@media (max-width: 1024px) {
+  .process-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .process-header {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-section {
+    padding: 60px 20px;
+  }
+
+  .steps-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 24px;
+  }
+
+  .step-arrow {
+    display: none;
+  }
+
+  .step-item {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .steps-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .process-header h2 {
+    font-size: 1.85rem;
+  }
+}
