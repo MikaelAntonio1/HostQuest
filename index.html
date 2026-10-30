@@ -1,439 +1,1358 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <link rel="icon" href="image/logopng.png" type="image/x-icon">   
 
-    <!-- Google tag (gtag.js) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HostQuest</title>
+    <meta name="description"
+        content="A HostQuest cria sites, landing pages e automações rápidos, bonitos e perfeitos no celular — e cuida da hospedagem e manutenção para você focar no seu negócio.">
+    <meta name="theme-color" content="#23252B">
+
+    <!-- Ícone da aba do navegador -->
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- Prévia ao compartilhar o link (WhatsApp, Instagram etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HostQuest — Sites, landing pages e automações">
+    <meta property="og:description"
+        content="Sites rápidos, bonitos e perfeitos no celular. Peça seu orçamento sem compromisso.">
+    <meta property="og:image" content="https://hostquest.com.br/img/compartilhar.png">
+    <meta property="og:url" content="https://hostquest.com.br/">
+
+    <!-- Google Analytics (o mesmo do site antigo) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FPJ9RNQV"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-K4FPJ9RNQV');
     </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/style-contain.css">
-    <link rel="stylesheet" href="css/sobre.css">
-    <link rel="stylesheet" href="css/servicos.css">
-    <link rel="stylesheet" href="css/processo.css">
-    <link rel="stylesheet" href="css/flexibilidade.css">
-    <link rel="stylesheet" href="css/hero-video.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/header.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <title>HostQuest</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header class="site-header">
-        <div class="header-container">
-            <a href="#inicio" class="header-logo-link">
-                <img class="header-logo" src="image/hostquest_logo.png" alt="HostQuest Logo">
-            </a>
 
-            <nav class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="#inicio" class="nav-link active">Início</a></li>
-                    <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
-                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
-                    <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
-                </ul>
-                
-                <a href="https://wa.me/5581996473467" target="_blank" class="header-cta mobile-only">Falar no WhatsApp</a>
-            </nav>
+    <div
+        style="font-family: Inter, system-ui, sans-serif; color: #3A3D45; background: #FFFFFF; min-height: 100vh; overflow-x: clip">
 
-            <div class="header-actions">
-                <a href="https://wa.me/5581996473467" target="_blank" class="header-cta desktop-only">Falar no WhatsApp</a>
-                
-                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
+        <!-- NAV -->
+        <header
+            style="position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.86); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid #EEEEF4">
+            <div
+                style="max-width: 1180px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px">
+                <a href="#inicio" aria-label="HostQuest, início" style="display: flex; align-items: center">
+                    <img src="img/logo-hostquest.svg" alt="HostQuest" width="176" height="40"
+                        style="height: 40px; width: auto; display: block">
+                </a>
+                <nav class="hq-desk" aria-label="Principal"
+                    style="display: flex; align-items: center; gap: 32px; font-size: 15px; font-weight: 500">
+                    <a class="hq-link" href="#porque">Por que ter um site</a>
+                    <a class="hq-link" href="#servicos">Serviços</a>
+                    <a class="hq-link" href="#diferenciais">Diferenciais</a>
+                    <a class="hq-link" href="#processo">Como funciona</a>
+                    <a class="hq-link" href="#faq">Dúvidas</a>
+                </nav>
+                <div style="display: flex; align-items: center; gap: 10px">
+                    <a class="hq-btn hq-b-roll hq-desk" href="#contato"
+                        style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 999px; background: #23252B; color: #FFFFFF; font-weight: 600; font-size: 15px; text-decoration: none"><span
+                            class="hq-roll"><span data-t="Fale com a gente">Fale com a gente</span></span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6"></path>
+                        </svg>
+                    </a>
+                    <button id="hq-burger" class="hq-mobile hq-burger" type="button" aria-label="Abrir menu"
+                        aria-controls="hq-menu" aria-expanded="false"
+                        style="position: relative; width: 46px; height: 46px; border-radius: 12px; border: 1px solid #E6E7EE; background: #FFFFFF; cursor: pointer; padding: 0"><span
+                            aria-hidden="true"></span><span aria-hidden="true"></span><span
+                            aria-hidden="true"></span></button>
+                </div>
             </div>
-        </div>
-    </header>
-    
-    <div id="inicio" class="contain-inic">
-        <div class="contain-left">
-            <p class="p-red"><strong> AGÊNCIA DE DESIGN & DESENVOLVIMENTO WEB </strong></p>
-            <h1>Construímos websites e Automações para impulsionar a sua empresa no mercado global.</h1>
-            <p class="txt-equ">Nossa equipe de designers e desenvolvedores cria websites para grandes empresas, startups e negócios em expansão.</p>
-            <a href="https://web.whatsapp.com/send?phone=558196473467">
-                <button class="btn-primary">
-                    <span>Entrar em contato</span>
-                    <svg class="icon-mail" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            <div id="hq-menu" class="hq-mnav">
+                <nav class="hq-mnav-in" aria-label="Menu móvel">
+                    <div
+                        style="display: flex; flex-direction: column; padding: 6px 20px 22px; border-top: 1px solid #EEEEF4; background: #FFFFFF">
+                        <a href="#porque"
+                            style="padding: 15px 4px; font-weight: 600; font-size: 16px; color: #23252B; text-decoration: none; border-bottom: 1px solid #F0F0F5; display: flex; justify-content: space-between; align-items: center">Por
+                            que ter um site<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A52C2"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14M13 6l6 6-6 6"></path>
+                            </svg></a>
+                        <a href="#servicos"
+                            style="padding: 15px 4px; font-weight: 600; font-size: 16px; color: #23252B; text-decoration: none; border-bottom: 1px solid #F0F0F5; display: flex; justify-content: space-between; align-items: center">Serviços<svg
+                                width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A52C2"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14M13 6l6 6-6 6"></path>
+                            </svg></a>
+                        <a href="#diferenciais"
+                            style="padding: 15px 4px; font-weight: 600; font-size: 16px; color: #23252B; text-decoration: none; border-bottom: 1px solid #F0F0F5; display: flex; justify-content: space-between; align-items: center">Diferenciais<svg
+                                width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A52C2"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14M13 6l6 6-6 6"></path>
+                            </svg></a>
+                        <a href="#processo"
+                            style="padding: 15px 4px; font-weight: 600; font-size: 16px; color: #23252B; text-decoration: none; border-bottom: 1px solid #F0F0F5; display: flex; justify-content: space-between; align-items: center">Como
+                            funciona<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A52C2"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14M13 6l6 6-6 6"></path>
+                            </svg></a>
+                        <a href="#faq"
+                            style="padding: 15px 4px; font-weight: 600; font-size: 16px; color: #23252B; text-decoration: none; border-bottom: 1px solid #F0F0F5; display: flex; justify-content: space-between; align-items: center">Dúvidas<svg
+                                width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A52C2"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14M13 6l6 6-6 6"></path>
+                            </svg></a>
+                        <a href="#contato"
+                            style="margin-top: 16px; padding: 15px 20px; border-radius: 999px; background: #23252B; color: #FFFFFF; font-weight: 600; text-align: center; text-decoration: none">Fale
+                            com a gente</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- HERO -->
+        <section id="inicio" class="hq-anim"
+            style="position: relative; overflow: hidden; padding: clamp(48px, 7vw, 96px) 20px clamp(56px, 8vw, 112px)">
+            <div aria-hidden="true"
+                style="position: absolute; width: 520px; height: 520px; right: -160px; top: -120px; border-radius: 50%; background: radial-gradient(circle, rgba(165,127,219,.22), transparent 65%)">
+            </div>
+            <div aria-hidden="true"
+                style="position: absolute; width: 420px; height: 420px; left: -180px; bottom: -120px; border-radius: 50%; background: radial-gradient(circle, rgba(0,178,232,.15), transparent 65%)">
+            </div>
+            <div aria-hidden="true" class="hq-grid" style="position: absolute; inset: 0"></div>
+            <div aria-hidden="true"
+                style="position: absolute; left: 0; right: 0; bottom: 0; height: 140px; overflow: hidden; pointer-events: none">
+                <div class="hq-wave" style="animation-duration: 30s"><svg viewBox="0 0 2880 140"
+                        preserveAspectRatio="none" width="100%" height="100%">
+                        <path d="M0 70 C 360 30, 1080 110, 1440 70 C 1800 30, 2520 110, 2880 70" fill="none"
+                            stroke="#A57FDB" stroke-opacity="0.55" stroke-width="2" vector-effect="non-scaling-stroke">
+                        </path>
+                    </svg></div>
+                <div class="hq-wave hq-rev" style="animation-duration: 22s"><svg viewBox="0 0 2880 140"
+                        preserveAspectRatio="none" width="100%" height="100%">
+                        <path d="M0 88 C 480 130, 960 46, 1440 88 C 1920 130, 2400 46, 2880 88" fill="none"
+                            stroke="#00B2E8" stroke-opacity="0.45" stroke-width="2" vector-effect="non-scaling-stroke">
+                        </path>
+                    </svg></div>
+                <div class="hq-wave" style="animation-duration: 38s"><svg viewBox="0 0 2880 140"
+                        preserveAspectRatio="none" width="100%" height="100%">
+                        <path d="M0 104 C 360 80, 1080 128, 1440 104 C 1800 80, 2520 128, 2880 104" fill="none"
+                            stroke="#FF5A5A" stroke-opacity="0.4" stroke-width="2" vector-effect="non-scaling-stroke">
+                        </path>
+                    </svg></div>
+            </div>
+            <div
+                style="position: relative; max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: clamp(40px, 6vw, 72px); align-items: center">
+
+                <div style="display: flex; flex-direction: column; gap: 26px">
+                    <div class="hq-rise"
+                        style="display: inline-flex; align-self: flex-start; align-items: center; gap: 10px; padding: 8px 14px 8px 10px; border-radius: 999px; background: #F4F1FB; color: #5B3FA0; font-size: 14px; font-weight: 600">
+                        <span class="hq-blink"
+                            style="width: 8px; height: 8px; border-radius: 50%; background: #FF5A5A; display: block"></span>
+                        Agenda aberta para novos projetos
+                    </div>
+                    <h1 class="hq-rise hq-d1"
+                        style="margin: 0; font-family: Montserrat, Inter, sans-serif; font-weight: 800; font-size: clamp(32px, 5.6vw, 66px); line-height: 1.06; letter-spacing: -0.03em; color: #23252B">
+                        Seu negócio online com um site que
+                        <span class="hq-sr">vende.</span><span class="hq-words" aria-hidden="true"><span
+                                style="color: #D63A3A">vende.</span><span
+                                style="color: #4A5FC1">impressiona.</span><span
+                                style="color: #7A52C2">converte.</span><span
+                                style="color: #0A7FA8">conquista.</span></span>
+                    </h1>
+                    <p class="hq-rise hq-d2"
+                        style="margin: 0; font-size: clamp(17px, 1.6vw, 19px); line-height: 1.65; color: #5F6370; max-width: 540px">
+                        A HostQuest cria sites, landing pages e automações rápidos, bonitos e perfeitos no celular — e
+                        cuida da hospedagem e manutenção para você focar no seu negócio.</p>
+                    <div class="hq-rise hq-d3 hq-ctas" style="display: flex; flex-wrap: wrap; gap: 12px">
+                        <a class="hq-btn hq-b-up" href="#contato" data-mag="1" data-track
+                            style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 26px; border-radius: 999px; background: #23252B; color: #FFFFFF; font-weight: 600; font-size: 16px; text-decoration: none">Solicitar
+                            orçamento grátis
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14M13 6l6 6-6 6"></path>
+                            </svg>
+                        </a>
+                        <a class="hq-btn hq-b-down" href="#servicos"
+                            style="display: inline-flex; align-items: center; padding: 16px 24px; border-radius: 999px; border: 1.5px solid #E2E1EC; color: #23252B; font-weight: 600; font-size: 16px; text-decoration: none">Ver
+                            serviços</a>
+                    </div>
+                    <ul class="hq-rise hq-d4"
+                        style="list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 22px; font-size: 14.5px; color: #3A3D45; font-weight: 500">
+                        <li style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18"
+                                viewBox="0 0 24 24" fill="none" stroke="#0A7FA8" stroke-width="2.4"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12l5 5 9-10"></path>
+                            </svg>100% responsivo</li>
+                        <li style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18"
+                                viewBox="0 0 24 24" fill="none" stroke="#0A7FA8" stroke-width="2.4"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12l5 5 9-10"></path>
+                            </svg>Prazo combinado</li>
+                        <li style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18"
+                                viewBox="0 0 24 24" fill="none" stroke="#0A7FA8" stroke-width="2.4"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12l5 5 9-10"></path>
+                            </svg>Suporte direto</li>
+                    </ul>
+                </div>
+
+                <!-- Hero visual -->
+                <div class="hq-rise hq-d2 hq-hero-vis"
+                    style="position: relative; min-height: 440px; display: flex; align-items: center; justify-content: center">
+                    <div aria-hidden="true"
+                        style="position: absolute; width: min(100%, 560px); aspect-ratio: 1; border-radius: 50%; border: 1.5px dashed #D9D2EF; animation: hqSpin 40s linear infinite">
+                        <span
+                            style="position: absolute; top: -7px; left: 50%; margin-left: -7px; width: 14px; height: 14px; border-radius: 50%; background: #FF5A5A; box-shadow: 0 0 0 6px rgba(255,90,90,.15); display: block"></span>
+                        <span
+                            style="position: absolute; bottom: -6px; left: 50%; margin-left: -6px; width: 12px; height: 12px; border-radius: 50%; background: #00B2E8; box-shadow: 0 0 0 6px rgba(0,178,232,.15); display: block"></span>
+                    </div>
+                    <div aria-hidden="true"
+                        style="position: absolute; width: min(78%, 430px); aspect-ratio: 1; border-radius: 50%; border: 1px solid #ECE8F6; animation: hqSpin 26s linear infinite reverse">
+                        <span
+                            style="position: absolute; top: 50%; right: -5px; margin-top: -5px; width: 10px; height: 10px; border-radius: 50%; background: #A57FDB; display: block"></span>
+                    </div>
+                    <svg class="hq-twinkle" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="#A57FDB" stroke-width="2.4" stroke-linecap="round" style="right: 8%; bottom: 12%">
+                        <path d="M12 4v16M4 12h16"></path>
                     </svg>
-                </button>
-            </a>
+                    <svg class="hq-twinkle" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="#00B2E8" stroke-width="2.6" stroke-linecap="round"
+                        style="left: 30%; top: 2%; animation-delay: -2s">
+                        <path d="M12 4v16M4 12h16"></path>
+                    </svg>
+                    <div aria-hidden="true" class="hq-float2"
+                        style="position: absolute; left: 0; top: 0; display: grid; grid-template-columns: repeat(3, 26px); gap: 12px">
+                        <span></span><span></span><span class="hq-pop"
+                            style="width: 26px; height: 26px; border-radius: 50%; background: #FF5A5A; display: block"></span>
+                        <span></span><span class="hq-pop"
+                            style="width: 26px; height: 26px; border-radius: 50%; background: #8E6585; display: block; animation-delay: .3s"></span><span
+                            class="hq-pop"
+                            style="width: 26px; height: 26px; border-radius: 50%; background: #B85C82; display: block; animation-delay: .45s"></span>
+                        <span class="hq-pop"
+                            style="width: 26px; height: 26px; border-radius: 50%; background: #00B2E8; display: block; animation-delay: .6s"></span><span
+                            class="hq-pop"
+                            style="width: 26px; height: 26px; border-radius: 50%; background: #6E86DE; display: block; animation-delay: .75s"></span><span
+                            class="hq-pop"
+                            style="width: 26px; height: 26px; border-radius: 50%; background: #A57FDB; display: block; animation-delay: .9s"></span>
+                    </div>
+
+                    <div class="hq-float"
+                        style="position: relative; width: 100%; max-width: 500px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E8E8F0; box-shadow: 0 40px 80px -36px rgba(48,36,110,.38), 0 8px 20px -10px rgba(35,37,43,.12); overflow: hidden">
+                        <div
+                            style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; background: #F6F6FA; border-bottom: 1px solid #ECECF2">
+                            <div aria-hidden="true" style="display: flex; gap: 6px"><span
+                                    style="width: 11px; height: 11px; border-radius: 50%; background: #FF5A5A; display: block"></span><span
+                                    style="width: 11px; height: 11px; border-radius: 50%; background: #A57FDB; display: block"></span><span
+                                    style="width: 11px; height: 11px; border-radius: 50%; background: #00B2E8; display: block"></span>
+                            </div>
+                            <div
+                                style="flex: 1; display: flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 8px; background: #FFFFFF; border: 1px solid #ECECF2; font-size: 12.5px; color: #5F6370">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0A7FA8"
+                                    stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                                    <rect x="5" y="11" width="14" height="10" rx="2"></rect>
+                                    <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+                                </svg>
+                                seunegocio.com.br
+                            </div>
+                        </div>
+                        <div style="padding: 22px 22px 26px; display: flex; flex-direction: column; gap: 18px">
+                            <div style="display: flex; justify-content: space-between; align-items: center">
+                                <div class="hq-skel" style="width: 86px; height: 14px; border-radius: 6px"></div>
+                                <div style="display: flex; gap: 10px">
+                                    <div class="hq-skel" style="width: 38px; height: 9px; border-radius: 5px"></div>
+                                    <div class="hq-skel" style="width: 38px; height: 9px; border-radius: 5px"></div>
+                                    <div class="hq-skel" style="width: 38px; height: 9px; border-radius: 5px"></div>
+                                </div>
+                            </div>
+                            <div
+                                style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 18px; align-items: center">
+                                <div style="display: flex; flex-direction: column; gap: 10px">
+                                    <div style="width: 92%; height: 18px; border-radius: 6px; background: #23252B">
+                                    </div>
+                                    <div style="width: 70%; height: 18px; border-radius: 6px; background: #23252B">
+                                    </div>
+                                    <div class="hq-skel"
+                                        style="width: 100%; height: 8px; border-radius: 4px; margin-top: 6px"></div>
+                                    <div class="hq-skel" style="width: 84%; height: 8px; border-radius: 4px"></div>
+                                    <div style="display: flex; gap: 8px; margin-top: 8px">
+                                        <div
+                                            style="width: 84px; height: 28px; border-radius: 999px; background: #FF5A5A">
+                                        </div>
+                                        <div
+                                            style="width: 64px; height: 28px; border-radius: 999px; border: 1.5px solid #E2E1EC">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    style="aspect-ratio: 1; border-radius: 14px; background: #F4F1FB; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden">
+                                    <div aria-hidden="true"
+                                        style="width: 70%; height: 70%; border-radius: 50%; border: 10px solid #E4DCF6; border-top-color: #A57FDB; animation: hqSpin 6s linear infinite">
+                                    </div>
+                                    <div aria-hidden="true"
+                                        style="position: absolute; width: 34%; height: 34%; border-radius: 50%; background: #6E86DE; opacity: .9">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+                                <div
+                                    style="padding: 12px; border-radius: 12px; border: 1px solid #EEEEF4; display: flex; flex-direction: column; gap: 8px">
+                                    <div style="width: 24px; height: 24px; border-radius: 8px; background: #FFE3E3">
+                                    </div>
+                                    <div class="hq-skel" style="height: 7px; border-radius: 4px"></div>
+                                    <div class="hq-skel" style="width: 70%; height: 7px; border-radius: 4px"></div>
+                                </div>
+                                <div
+                                    style="padding: 12px; border-radius: 12px; border: 1px solid #EEEEF4; display: flex; flex-direction: column; gap: 8px">
+                                    <div style="width: 24px; height: 24px; border-radius: 8px; background: #E1EEFE">
+                                    </div>
+                                    <div class="hq-skel" style="height: 7px; border-radius: 4px"></div>
+                                    <div class="hq-skel" style="width: 70%; height: 7px; border-radius: 4px"></div>
+                                </div>
+                                <div
+                                    style="padding: 12px; border-radius: 12px; border: 1px solid #EEEEF4; display: flex; flex-direction: column; gap: 8px">
+                                    <div style="width: 24px; height: 24px; border-radius: 8px; background: #EDE5FA">
+                                    </div>
+                                    <div class="hq-skel" style="height: 7px; border-radius: 4px"></div>
+                                    <div class="hq-skel" style="width: 70%; height: 7px; border-radius: 4px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MARQUEE -->
+        <div aria-hidden="true" class="hq-anim"
+            style="border-top: 1px solid #EEEEF4; border-bottom: 1px solid #EEEEF4; background: #FAFAFC; overflow: hidden; padding: 18px 0">
+            <div class="hq-marquee"
+                style="display: flex; width: max-content; gap: 48px; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 18px; color: #3A3D45; white-space: nowrap">
+                <span>Sites institucionais</span><span style="color: #FF5A5A">●</span><span>Landing pages</span><span
+                    style="color: #A57FDB">●</span><span>Sites para negócios</span><span
+                    style="color: #00B2E8">●</span><span>Hospedagem</span><span
+                    style="color: #6E86DE">●</span><span>Domínio &amp; e-mail</span><span
+                    style="color: #B85C82">●</span><span>Manutenção</span><span
+                    style="color: #8E6585">●</span><span>Automações</span><span style="color: #FF5A5A">●</span>
+                <span>Sites institucionais</span><span style="color: #FF5A5A">●</span><span>Landing pages</span><span
+                    style="color: #A57FDB">●</span><span>Sites para negócios</span><span
+                    style="color: #00B2E8">●</span><span>Hospedagem</span><span
+                    style="color: #6E86DE">●</span><span>Domínio &amp; e-mail</span><span
+                    style="color: #B85C82">●</span><span>Manutenção</span><span
+                    style="color: #8E6585">●</span><span>Automações</span><span style="color: #FF5A5A">●</span>
+            </div>
         </div>
 
-        <div class="contain-right">
-            <img class="photo-start" src="image/png-photopea2.png">
+        <!-- POR QUE TER UM SITE -->
+        <section id="porque" class="hq-anim"
+            style="position: relative; padding: clamp(72px, 9vw, 120px) 20px clamp(40px, 5vw, 64px); scroll-margin-top: 70px">
+            <div
+                style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: clamp(40px, 6vw, 80px); align-items: center">
+
+                <div class="hq-reveal hq-vidwrap" style="position: relative">
+                    <div aria-hidden="true" class="hq-vid-blob"></div>
+                    <figure
+                        style="position: relative; margin: 0; border-radius: 20px; background: #FFFFFF; border: 1px solid #E8E8F0; box-shadow: 0 40px 70px -40px rgba(48,36,110,.45); overflow: hidden">
+                        <div style="display: flex; align-items: center; gap: 6px; padding: 11px 14px; background: #F6F6FA; border-bottom: 1px solid #ECECF2"
+                            aria-hidden="true"><span
+                                style="width: 10px; height: 10px; border-radius: 50%; background: #FF5A5A; display: block"></span><span
+                                style="width: 10px; height: 10px; border-radius: 50%; background: #A57FDB; display: block"></span><span
+                                style="width: 10px; height: 10px; border-radius: 50%; background: #00B2E8; display: block"></span>
+                        </div>
+                        <div style="position: relative; aspect-ratio: 16 / 9; background: #1C1D23">
+                            <video src="video/video-empresario.mp4" poster="img/video-capa.jpg" autoplay="" muted=""
+                                loop="" playsinline="" preload="metadata"
+                                aria-label="Empresários conversando em uma reunião"
+                                style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block"></video>
+                            <div aria-hidden="true"
+                                style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(28,29,35,.7))">
+                            </div>
+                            <figcaption
+                                style="position: absolute; left: 18px; right: 18px; bottom: 16px; display: flex; align-items: center; gap: 10px; color: #FFFFFF; font-size: 14.5px; font-weight: 600">
+                                <span class="hq-blink"
+                                    style="width: 8px; height: 8px; border-radius: 50%; background: #FF5A5A; display: block; flex-shrink: 0"></span>Cada
+                                negócio tem sua própria identidade.</figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 26px">
+                    <div class="hq-reveal" style="display: flex; flex-direction: column; gap: 14px">
+                        <span
+                            style="font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #D63A3A">Por
+                            que ter um site?</span>
+                        <h2
+                            style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 800; font-size: clamp(30px, 3.8vw, 46px); line-height: 1.1; letter-spacing: -0.025em; color: #23252B">
+                            Sua empresa merece ser encontrada.</h2>
+                    </div>
+                    <ul
+                        style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+                        <li class="hq-why hq-reveal" style="--c: #D63A3A; --cs: #FFE8E8">
+                            <span class="hq-why-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path>
+                                </svg></span>
+                            <span style="display: flex; flex-direction: column; gap: 4px; min-width: 0"><span
+                                    style="font-family: Montserrat, sans-serif; font-weight: 700; font-size: 18px; color: #23252B">Presença
+                                    digital</span><span style="font-size: 15px; line-height: 1.6; color: #5F6370">Esteja
+                                    onde seus clientes procuram — no Google, no Instagram e no WhatsApp.</span></span>
+                        </li>
+                        <li class="hq-why hq-reveal" style="--c: #7A52C2; --cs: #EDE5FA">
+                            <span class="hq-why-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path>
+                                    <path d="M9 12l2 2 4-4"></path>
+                                </svg></span>
+                            <span style="display: flex; flex-direction: column; gap: 4px; min-width: 0"><span
+                                    style="font-family: Montserrat, sans-serif; font-weight: 700; font-size: 18px; color: #23252B">Credibilidade</span><span
+                                    style="font-size: 15px; line-height: 1.6; color: #5F6370">Um site profissional passa
+                                    confiança antes mesmo da primeira conversa.</span></span>
+                        </li>
+                        <li class="hq-why hq-reveal" style="--c: #0A7FA8; --cs: #E1F5FC">
+                            <span class="hq-why-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M3 17l6-6 4 4 8-8"></path>
+                                    <path d="M15 7h6v6"></path>
+                                </svg></span>
+                            <span style="display: flex; flex-direction: column; gap: 4px; min-width: 0"><span
+                                    style="font-family: Montserrat, sans-serif; font-weight: 700; font-size: 18px; color: #23252B">Mais
+                                    oportunidades</span><span
+                                    style="font-size: 15px; line-height: 1.6; color: #5F6370">Facilite o contato de
+                                    novos clientes e transforme visitas em vendas.</span></span>
+                        </li>
+                    </ul>
+                    <div class="hq-reveal" style="display: flex; flex-direction: column; gap: 12px">
+                        <span style="font-size: 14px; font-weight: 600; color: #23252B">Feito para negócios como:</span>
+                        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px">
+                            <li class="hq-niche">Restaurantes</li>
+                            <li class="hq-niche">Salões de beleza</li>
+                            <li class="hq-niche">Barbearias</li>
+                            <li class="hq-niche">Clínicas</li>
+                            <li class="hq-niche">Lojas</li>
+                            <li class="hq-niche">Profissionais liberais</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section id="servicos" class="hq-anim"
+            style="position: relative; overflow: hidden; padding: clamp(72px, 9vw, 128px) 20px; scroll-margin-top: 70px">
+            <div aria-hidden="true" class="hq-sway hq-deco"
+                style="position: absolute; right: 6%; top: 70px; width: 120px; height: 120px; border-radius: 34px; border: 2px solid #EDE5FA">
+            </div>
+            <div aria-hidden="true" class="hq-sway hq-deco"
+                style="position: absolute; right: calc(6% + 34px); top: 104px; width: 52px; height: 52px; border-radius: 50%; background: #FFE8E8; animation-delay: -4s">
+            </div>
+            <svg class="hq-twinkle" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="#FF5A5A" stroke-width="2.4" stroke-linecap="round" style="right: 22%; top: 60px">
+                <path d="M12 4v16M4 12h16"></path>
+            </svg>
+            <svg class="hq-twinkle" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="#6E86DE" stroke-width="2.4" stroke-linecap="round"
+                style="left: 3%; bottom: 80px; animation-delay: -1.5s">
+                <path d="M12 4v16M4 12h16"></path>
+            </svg>
+            <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 52px">
+                <div class="hq-reveal" style="display: flex; flex-direction: column; gap: 14px; max-width: 640px">
+                    <span
+                        style="font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #D63A3A">Serviços</span>
+                    <h2
+                        style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 800; font-size: clamp(30px, 3.8vw, 46px); line-height: 1.1; letter-spacing: -0.025em; color: #23252B">
+                        Tudo o que sua empresa precisa para ser encontrada na internet.</h2>
+                    <p style="margin: 0; font-size: 17px; line-height: 1.65; color: #5F6370">Do primeiro rascunho ao
+                        site no ar — e depois dele também.</p>
+                </div>
+                <div class="hq-svc-grid hq-stagger">
+                    <article class="hq-svc hq-svc-big hq-reveal" data-track
+                        style="--c: #5A70D0; --ct: #3E52AE; --cs: #E6EBFB; --cg: rgba(110,134,222,.22); border-radius: 24px; border: 1px solid #EBEBF2; background: #FFFFFF; display: flex; flex-direction: column">
+                        <div class="hq-svc-glow" aria-hidden="true"></div>
+                        <div class="hq-svc-bar" aria-hidden="true"></div>
+                        <div class="hq-svc-art" aria-hidden="true" style="background: #EEF2FD"><img
+                                src="img/servico-institucional.webp" alt="" loading="lazy" decoding="async"></div>
+                        <div
+                            style="position: relative; padding: 24px 28px 26px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+                            <h3
+                                style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 21px; color: #23252B">
+                                Sites institucionais</h3>
+                            <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: #5F6370">Apresente sua
+                                empresa com credibilidade: quem você é, o que oferece e como falar com você.</p>
+                            <ul
+                                style="list-style: none; margin: 2px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px">
+                                <li class="hq-svc-tag">Páginas sob medida</li>
+                                <li class="hq-svc-tag">Formulário de contato</li>
+                                <li class="hq-svc-tag">Mapa e redes</li>
+                            </ul>
+                            <a class="hq-svc-cta" href="#contato" style="margin-top: auto; align-self: flex-start">Pedir
+                                orçamento
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6"></path>
+                                </svg></a>
+                        </div>
+                    </article>
+                    <article class="hq-svc hq-svc-big hq-reveal" data-track
+                        style="--c: #8A5FD3; --ct: #6B44B0; --cs: #EDE5FA; --cg: rgba(165,127,219,.24); border-radius: 24px; border: 1px solid #EBEBF2; background: #FFFFFF; display: flex; flex-direction: column">
+                        <div class="hq-svc-glow" aria-hidden="true"></div>
+                        <div class="hq-svc-bar" aria-hidden="true"></div>
+                        <div class="hq-svc-art" aria-hidden="true" style="background: #F3EEFC"><img
+                                src="img/servico-landing.webp" alt="" loading="lazy" decoding="async"></div>
+                        <div
+                            style="position: relative; padding: 24px 28px 26px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+                            <h3
+                                style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 21px; color: #23252B">
+                                Landing pages</h3>
+                            <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: #5F6370">Páginas focadas em
+                                um objetivo — vender, captar contatos ou divulgar uma campanha — com alta conversão.</p>
+                            <ul
+                                style="list-style: none; margin: 2px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px">
+                                <li class="hq-svc-tag">Foco em conversão</li>
+                                <li class="hq-svc-tag">Botão de WhatsApp</li>
+                                <li class="hq-svc-tag">Anúncios</li>
+                            </ul>
+                            <a class="hq-svc-cta" href="#contato" style="margin-top: auto; align-self: flex-start">Pedir
+                                orçamento
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6"></path>
+                                </svg></a>
+                        </div>
+                    </article>
+                    <article class="hq-svc hq-svc-big hq-reveal" data-track
+                        style="--c: #E04848; --ct: #B42C2C; --cs: #FFE8E8; --cg: rgba(255,90,90,.18); border-radius: 24px; border: 1px solid #EBEBF2; background: #FFFFFF; display: flex; flex-direction: column">
+                        <div class="hq-svc-glow" aria-hidden="true"></div>
+                        <div class="hq-svc-bar" aria-hidden="true"></div>
+                        <div class="hq-svc-art" aria-hidden="true" style="background: #FFF2F2"><img
+                                src="img/servico-negocios.webp" alt="" loading="lazy" decoding="async"></div>
+                        <div
+                            style="position: relative; padding: 24px 28px 26px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+                            <h3
+                                style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 21px; color: #23252B">
+                                Sites para negócios</h3>
+                            <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: #5F6370">Para restaurantes,
+                                salões, barbearias e clínicas: cardápio, serviços, agendamento e localização.</p>
+                            <ul
+                                style="list-style: none; margin: 2px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px">
+                                <li class="hq-svc-tag">Cardápio e serviços</li>
+                                <li class="hq-svc-tag">Agendamento</li>
+                                <li class="hq-svc-tag">Localização</li>
+                            </ul>
+                            <a class="hq-svc-cta" href="#contato" style="margin-top: auto; align-self: flex-start">Pedir
+                                orçamento
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6"></path>
+                                </svg></a>
+                        </div>
+                    </article>
+                    <article class="hq-svc hq-reveal" data-track
+                        style="--c: #0A93BF; --ct: #08708F; --cs: #E1F5FC; --cg: rgba(0,178,232,.18); padding: 24px 26px; border-radius: 22px; border: 1px solid #EBEBF2; background: #FFFFFF; display: flex; gap: 18px; align-items: flex-start">
+                        <div class="hq-svc-glow" aria-hidden="true"></div>
+                        <div class="hq-svc-bar" aria-hidden="true"></div>
+                        <div class="hq-svc-ico"
+                            style="position: relative; flex-shrink: 0; width: 52px; height: 52px; border-radius: 15px; display: flex; align-items: center; justify-content: center">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M13 2L4 14h7l-1 8 9-12h-7z"></path>
+                            </svg></div>
+                        <div style="position: relative; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+                            <h3
+                                style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 18px; color: #23252B">
+                                Automações</h3>
+                            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5F6370">Respostas
+                                automáticas, formulários que viram planilhas e integrações que economizam o seu tempo.
+                            </p>
+                            <a class="hq-svc-cta" href="#contato" style="align-self: flex-start; min-height: 36px">Pedir
+                                orçamento
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6"></path>
+                                </svg></a>
+                        </div>
+                    </article>
+                    <article class="hq-svc hq-reveal" data-track
+                        style="--c: #5A70D0; --ct: #3E52AE; --cs: #E6EBFB; --cg: rgba(110,134,222,.2); padding: 24px 26px; border-radius: 22px; border: 1px solid #EBEBF2; background: #FFFFFF; display: flex; gap: 18px; align-items: flex-start">
+                        <div class="hq-svc-glow" aria-hidden="true"></div>
+                        <div class="hq-svc-bar" aria-hidden="true"></div>
+                        <div class="hq-svc-ico"
+                            style="position: relative; flex-shrink: 0; width: 52px; height: 52px; border-radius: 15px; display: flex; align-items: center; justify-content: center">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="4" width="18" height="7" rx="2"></rect>
+                                <rect x="3" y="13" width="18" height="7" rx="2"></rect>
+                                <path d="M7 7.5h.01M7 16.5h.01M11 7.5h6M11 16.5h6"></path>
+                            </svg></div>
+                        <div style="position: relative; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+                            <h3
+                                style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 18px; color: #23252B">
+                                Hospedagem &amp; domínio</h3>
+                            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5F6370">Domínio próprio,
+                                hospedagem segura com SSL e e-mail profissional com o nome da sua empresa.</p>
+                            <a class="hq-svc-cta" href="#contato" style="align-self: flex-start; min-height: 36px">Pedir
+                                orçamento
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6"></path>
+                                </svg></a>
+                        </div>
+                    </article>
+                    <article class="hq-svc hq-reveal" data-track
+                        style="--c: #B04F7C; --ct: #8E3A62; --cs: #F7E6EE; --cg: rgba(184,92,130,.18); padding: 24px 26px; border-radius: 22px; border: 1px solid #EBEBF2; background: #FFFFFF; display: flex; gap: 18px; align-items: flex-start">
+                        <div class="hq-svc-glow" aria-hidden="true"></div>
+                        <div class="hq-svc-bar" aria-hidden="true"></div>
+                        <div class="hq-svc-ico"
+                            style="position: relative; flex-shrink: 0; width: 52px; height: 52px; border-radius: 15px; display: flex; align-items: center; justify-content: center">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path>
+                                <path d="M9 12l2 2 4-4"></path>
+                            </svg></div>
+                        <div style="position: relative; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+                            <h3
+                                style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 18px; color: #23252B">
+                                Manutenção &amp; suporte</h3>
+                            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5F6370">Atualizações,
+                                backups e ajustes de conteúdo. Seu site sempre no ar, seguro e com cara de novo.</p>
+                            <a class="hq-svc-cta" href="#contato" style="align-self: flex-start; min-height: 36px">Pedir
+                                orçamento
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6"></path>
+                                </svg></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIFERENCIAIS -->
+        <section id="diferenciais" class="hq-anim"
+            style="padding: clamp(72px, 9vw, 120px) 20px; background: #F7F6FB; scroll-margin-top: 70px">
+            <div
+                style="max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: clamp(36px, 5vw, 56px)">
+                <div class="hq-reveal"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px clamp(32px, 6vw, 80px); align-items: end">
+                    <div style="display: flex; flex-direction: column; gap: 14px">
+                        <span
+                            style="font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #7A52C2">Por
+                            que a HostQuest</span>
+                        <h2
+                            style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 800; font-size: clamp(30px, 3.8vw, 46px); line-height: 1.1; letter-spacing: -0.025em; color: #23252B">
+                            Atenção total ao seu projeto, do começo ao fim.</h2>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 20px">
+                        <p style="margin: 0; max-width: 520px; font-size: 17px; line-height: 1.7; color: #5F6370">Somos
+                            uma empresa nova — e isso joga a seu favor. Cada cliente é tratado como prioridade, com
+                            comunicação direta, sem intermediários e sem respostas automáticas.</p>
+                        <a class="hq-btn hq-b-circle" href="#contato" data-track
+                            style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; padding: 15px 24px; border-radius: 999px; background: #23252B; color: #FFFFFF; font-weight: 600; font-size: 15.5px; text-decoration: none">Quero
+                            conversar
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14M13 6l6 6-6 6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hq-bento hq-stagger">
+
+                    <div class="hq-dif hq-reveal" style="grid-area: chat; --c: #A57FDB">
+                        <div class="hq-dif-in"
+                            style="background: #1C1D23; padding: clamp(24px, 3vw, 34px); gap: 14px; overflow: hidden">
+                            <div aria-hidden="true"
+                                style="position: absolute; right: -120px; top: -120px; width: 320px; height: 320px; border-radius: 50%; background: radial-gradient(circle, rgba(165,127,219,.35), transparent 65%)">
+                            </div>
+                            <span
+                                style="position: relative; align-self: flex-start; padding: 7px 12px; border-radius: 999px; background: rgba(255,255,255,.08); color: #D9CCF5; font-size: 13px; font-weight: 600">Atendimento
+                                direto</span>
+                            <h3
+                                style="position: relative; margin: 4px 0 0; font-family: Montserrat, sans-serif; font-weight: 800; font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; letter-spacing: -0.02em; color: #FFFFFF">
+                                Você fala com quem faz o seu site.</h3>
+                            <p
+                                style="position: relative; margin: 0; font-size: 15.5px; line-height: 1.6; color: #B9BBC7; max-width: 420px">
+                                Sem intermediários e sem robôs. Respostas rápidas, pelo canal que você preferir.</p>
+                            <div aria-hidden="true"
+                                style="position: relative; margin-top: auto; border-radius: 18px; background: #26272F; border: 1px solid #34353F; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+                                <div
+                                    style="display: flex; align-items: center; gap: 10px; padding-bottom: 10px; border-bottom: 1px solid #34353F">
+                                    <span
+                                        style="width: 34px; height: 34px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; gap: 2px"><span
+                                            style="width: 6px; height: 6px; border-radius: 50%; background: #FF5A5A; display: block"></span><span
+                                            style="width: 6px; height: 6px; border-radius: 50%; background: #A57FDB; display: block"></span><span
+                                            style="width: 6px; height: 6px; border-radius: 50%; background: #00B2E8; display: block"></span></span>
+                                    <span style="display: flex; flex-direction: column"><span
+                                            style="font-size: 14px; font-weight: 600; color: #FFFFFF">HostQuest</span><span
+                                            style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: #8FD9F2"><span
+                                                class="hq-blink"
+                                                style="width: 7px; height: 7px; border-radius: 50%; background: #00B2E8; display: block"></span>online
+                                            agora</span></span>
+                                </div>
+                                <div class="hq-msg"
+                                    style="align-self: flex-end; max-width: 82%; padding: 10px 14px; border-radius: 16px 16px 4px 16px; background: #7A52C2; color: #FFFFFF; font-size: 14px; line-height: 1.45; animation-delay: .4s">
+                                    Oi! Quero um site para minha clínica.</div>
+                                <div class="hq-msg"
+                                    style="align-self: flex-start; max-width: 82%; padding: 10px 14px; border-radius: 16px 16px 16px 4px; background: #34353F; color: #FFFFFF; font-size: 14px; line-height: 1.45; animation-delay: 1.8s">
+                                    Perfeito! Me conta um pouco sobre o seu negócio?</div>
+                                <div class="hq-msg"
+                                    style="align-self: flex-start; padding: 12px 14px; border-radius: 16px 16px 16px 4px; background: #34353F; animation-delay: 3.2s">
+                                    <svg width="30" height="8" viewBox="0 0 30 8">
+                                        <g class="hq-typing" fill="#B9BBC7">
+                                            <circle cx="4" cy="4" r="3"></circle>
+                                            <circle cx="15" cy="4" r="3"></circle>
+                                            <circle cx="26" cy="4" r="3"></circle>
+                                        </g>
+                                    </svg></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hq-dif hq-reveal" style="grid-area: mob; --c: #8A5FD3">
+                        <div class="hq-dif-in" style="gap: 12px">
+                            <div aria-hidden="true"
+                                style="height: 150px; border-radius: 14px; background: #F6F2FC; display: flex; align-items: center; justify-content: center; margin-bottom: 6px">
+                                <div
+                                    style="width: 76px; height: 132px; border-radius: 16px; border: 2.5px solid #23252B; background: #FFFFFF; padding: 12px 8px 8px; overflow: hidden; position: relative">
+                                    <span
+                                        style="position: absolute; top: 4px; left: 50%; margin-left: -10px; width: 20px; height: 3px; border-radius: 3px; background: #23252B; display: block"></span>
+                                    <div class="hq-feed" style="display: flex; flex-direction: column; gap: 6px">
+                                        <div style="height: 7px; border-radius: 4px; background: #E4DCF6; width: 80%">
+                                        </div>
+                                        <div style="height: 22px; border-radius: 6px; background: #F1ECFB"></div>
+                                        <div style="height: 7px; border-radius: 4px; background: #E4DCF6; width: 60%">
+                                        </div>
+                                        <div style="height: 22px; border-radius: 6px; background: #F1ECFB"></div>
+                                        <div style="height: 7px; border-radius: 4px; background: #E4DCF6; width: 90%">
+                                        </div>
+                                        <div style="height: 22px; border-radius: 6px; background: #F1ECFB"></div>
+                                        <div style="height: 7px; border-radius: 4px; background: #E4DCF6; width: 70%">
+                                        </div>
+                                        <div style="height: 22px; border-radius: 6px; background: #F1ECFB"></div>
+                                        <div style="height: 7px; border-radius: 4px; background: #E4DCF6; width: 80%">
+                                        </div>
+                                        <div style="height: 22px; border-radius: 6px; background: #F1ECFB"></div>
+                                        <div style="height: 7px; border-radius: 4px; background: #E4DCF6; width: 60%">
+                                        </div>
+                                        <div style="height: 22px; border-radius: 6px; background: #F1ECFB"></div>
+                                        <div style="height: 7px; border-radius: 4px; background: #E4DCF6; width: 90%">
+                                        </div>
+                                        <div style="height: 22px; border-radius: 6px; background: #F1ECFB"></div>
+                                        <div style="height: 7px; border-radius: 4px; background: #E4DCF6; width: 70%">
+                                        </div>
+                                        <div style="height: 22px; border-radius: 6px; background: #F1ECFB"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3
+                                style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 19px; line-height: 1.3; color: #23252B">
+                                Pensado para o celular</h3>
+                            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5F6370">A maioria dos
+                                clientes chega pelo smartphone. Começamos por ele.</p>
+                        </div>
+                    </div>
+
+                    <div class="hq-dif hq-reveal" style="grid-area: des; --c: #0A93BF">
+                        <div class="hq-dif-in" style="gap: 12px">
+                            <div aria-hidden="true"
+                                style="height: 150px; border-radius: 14px; background: #EEF8FC; display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 6px">
+                                <span class="hq-pop"
+                                    style="width: 22px; height: 22px; border-radius: 50%; background: #FF5A5A; display: block"></span>
+                                <span class="hq-pop"
+                                    style="width: 22px; height: 22px; border-radius: 50%; background: #B85C82; display: block; animation-delay: .15s"></span>
+                                <span class="hq-pop"
+                                    style="width: 22px; height: 22px; border-radius: 50%; background: #8E6585; display: block; animation-delay: .3s"></span>
+                                <span class="hq-pop"
+                                    style="width: 22px; height: 22px; border-radius: 50%; background: #A57FDB; display: block; animation-delay: .45s"></span>
+                                <span class="hq-pop"
+                                    style="width: 22px; height: 22px; border-radius: 50%; background: #6E86DE; display: block; animation-delay: .6s"></span>
+                                <span class="hq-pop"
+                                    style="width: 22px; height: 22px; border-radius: 50%; background: #00B2E8; display: block; animation-delay: .75s"></span>
+                            </div>
+                            <h3
+                                style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 19px; line-height: 1.3; color: #23252B">
+                                Design exclusivo</h3>
+                            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5F6370">Nada de modelo
+                                pronto: o visual nasce da identidade da sua marca.</p>
+                        </div>
+                    </div>
+
+                    <div class="hq-dif hq-reveal" style="grid-area: price; --c: #5A70D0">
+                        <div class="hq-dif-in"
+                            style="flex-direction: row; flex-wrap: wrap; align-items: center; gap: 22px">
+                            <div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 10px">
+                                <h3
+                                    style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 19px; line-height: 1.3; color: #23252B">
+                                    Preço transparente</h3>
+                                <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5F6370">Proposta clara
+                                    antes de começar, com escopo, prazo e valor definidos. Sem surpresas no caminho.</p>
+                            </div>
+                            <div aria-hidden="true"
+                                style="flex: 1 1 220px; border-radius: 14px; background: #F4F6FD; padding: 16px 18px; display: flex; flex-direction: column; gap: 12px">
+                                <div
+                                    style="display: flex; align-items: center; justify-content: space-between; font-size: 14px; font-weight: 500; color: #23252B">
+                                    Escopo do projeto<svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="#3E52AE" stroke-width="2.4" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="9" stroke="#D9DEF5" stroke-width="2"></circle>
+                                        <path class="hq-draw" pathLength="24" d="M8 12.5l2.6 2.6L16 9.5"
+                                            style="animation-delay: 0s"></path>
+                                    </svg></div>
+                                <div
+                                    style="display: flex; align-items: center; justify-content: space-between; font-size: 14px; font-weight: 500; color: #23252B">
+                                    Prazo de entrega<svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="#3E52AE" stroke-width="2.4" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="9" stroke="#D9DEF5" stroke-width="2"></circle>
+                                        <path class="hq-draw" pathLength="24" d="M8 12.5l2.6 2.6L16 9.5"
+                                            style="animation-delay: .35s"></path>
+                                    </svg></div>
+                                <div
+                                    style="display: flex; align-items: center; justify-content: space-between; font-size: 14px; font-weight: 500; color: #23252B">
+                                    Investimento<svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="#3E52AE" stroke-width="2.4" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="9" stroke="#D9DEF5" stroke-width="2"></circle>
+                                        <path class="hq-draw" pathLength="24" d="M8 12.5l2.6 2.6L16 9.5"
+                                            style="animation-delay: .7s"></path>
+                                    </svg></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hq-dif hq-reveal" style="grid-area: time; --c: #B04F7C">
+                        <div class="hq-dif-in"
+                            style="flex-direction: row; flex-wrap: wrap; align-items: center; gap: 22px">
+                            <div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 10px">
+                                <h3
+                                    style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 19px; line-height: 1.3; color: #23252B">
+                                    Prazo combinado</h3>
+                                <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5F6370">Cronograma
+                                    definido na proposta e atualizações a cada etapa.</p>
+                            </div>
+                            <div aria-hidden="true"
+                                style="flex: 1 1 240px; border-radius: 14px; background: #FBF2F6; padding: 20px 18px 16px; display: flex; flex-direction: column; gap: 12px">
+                                <div style="position: relative; height: 6px; border-radius: 6px; background: #EBD5E0">
+                                    <div class="hq-fill"
+                                        style="position: absolute; inset: 0; border-radius: 6px; background: #B04F7C">
+                                    </div>
+                                    <div
+                                        style="position: absolute; inset: -5px 0; display: flex; justify-content: space-between">
+                                        <span
+                                            style="width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF; border: 3px solid #B04F7C; display: block"></span><span
+                                            style="width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF; border: 3px solid #B04F7C; display: block"></span><span
+                                            style="width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF; border: 3px solid #B04F7C; display: block"></span><span
+                                            style="width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF; border: 3px solid #B04F7C; display: block"></span>
+                                    </div>
+                                </div>
+                                <div
+                                    style="display: flex; justify-content: space-between; font-size: 12.5px; font-weight: 600; color: #6E3A54">
+                                    <span>Conversa</span><span>Proposta</span><span>Criação</span><span>Entrega</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hq-dif hq-reveal" style="grid-area: sup; --c: #E04848">
+                        <div class="hq-dif-in"
+                            style="flex-direction: row; flex-wrap: wrap; align-items: center; gap: 22px">
+                            <div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 10px">
+                                <h3
+                                    style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 700; font-size: 19px; line-height: 1.3; color: #23252B">
+                                    Suporte após a entrega</h3>
+                                <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5F6370">Seu site não
+                                    fica abandonado: seguimos por perto para ajustes e dúvidas.</p>
+                            </div>
+                            <div aria-hidden="true"
+                                style="flex: 1 1 240px; border-radius: 14px; background: #FFF3F3; padding: 14px 18px; display: flex; flex-direction: column; gap: 6px">
+                                <span
+                                    style="align-self: flex-start; display: flex; align-items: center; gap: 7px; padding: 5px 10px; border-radius: 999px; background: #FFFFFF; font-size: 12.5px; font-weight: 600; color: #23252B"><span
+                                        class="hq-blink"
+                                        style="width: 8px; height: 8px; border-radius: 50%; background: #2BB673; display: block"></span>Site
+                                    no ar</span>
+                                <svg width="100%" height="44" viewBox="0 0 240 44" preserveAspectRatio="none">
+                                    <path class="hq-beat" pathLength="40" d="M0 24h70l10-16 14 32 12-22 8 6h126"
+                                        fill="none" stroke="#E04848" stroke-width="2.4" stroke-linecap="round"
+                                        stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ONDAS: entrada do processo -->
+        <div aria-hidden="true" class="hq-anim"
+            style="position: relative; height: clamp(110px, 12vw, 180px); background: #F7F6FB; overflow: hidden; margin-bottom: -1px">
+            <div class="hq-bob" style="position: absolute; inset: 0; animation-duration: 9s">
+                <div class="hq-wave" style="animation-duration: 34s"><svg viewBox="0 0 2880 160"
+                        preserveAspectRatio="none" width="100%" height="100%">
+                        <path fill="#A57FDB" fill-opacity="0.45"
+                            d="M0 40 C 360 0, 1080 80, 1440 40 C 1800 0, 2520 80, 2880 40 V160 H0 Z"></path>
+                    </svg></div>
+            </div>
+            <div class="hq-bob" style="position: absolute; inset: 0; animation-duration: 7s; animation-delay: -3s">
+                <div class="hq-wave hq-rev" style="animation-duration: 26s"><svg viewBox="0 0 2880 160"
+                        preserveAspectRatio="none" width="100%" height="100%">
+                        <path fill="#6E86DE" fill-opacity="0.5"
+                            d="M0 70 C 480 115, 960 25, 1440 70 C 1920 115, 2400 25, 2880 70 V160 H0 Z"></path>
+                    </svg></div>
+            </div>
+            <div class="hq-bob" style="position: absolute; inset: 0; animation-duration: 11s; animation-delay: -5s">
+                <div class="hq-wave" style="animation-duration: 20s"><svg viewBox="0 0 2880 160"
+                        preserveAspectRatio="none" width="100%" height="100%">
+                        <path fill="#7A52C2" fill-opacity="0.75"
+                            d="M0 92 C 360 60, 1080 124, 1440 92 C 1800 60, 2520 124, 2880 92 V160 H0 Z"></path>
+                    </svg></div>
+            </div>
+            <div class="hq-wave hq-rev" style="animation-duration: 44s"><svg viewBox="0 0 2880 160"
+                    preserveAspectRatio="none" width="100%" height="100%">
+                    <path fill="#1C1D23" d="M0 118 C 480 140, 960 96, 1440 118 C 1920 140, 2400 96, 2880 118 V160 H0 Z">
+                    </path>
+                </svg></div>
         </div>
+
+        <!-- PROCESSO -->
+        <section id="processo" class="hq-spotwrap hq-anim" data-track
+            style="padding: clamp(72px, 9vw, 120px) 20px; background: #1C1D23; color: #FFFFFF; position: relative; overflow: hidden; scroll-margin-top: 70px">
+            <div aria-hidden="true"
+                style="position: absolute; right: -120px; top: -120px; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(165,127,219,.28), transparent 65%)">
+            </div>
+            <div aria-hidden="true" class="hq-spot"></div>
+            <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none">
+                <span class="hq-up"
+                    style="left: 6%; width: 10px; height: 10px; background: #FF5A5A; animation-duration: 16s"></span>
+                <span class="hq-up"
+                    style="left: 14%; width: 6px; height: 6px; background: #00B2E8; animation-duration: 12s; animation-delay: -6s"></span>
+                <span class="hq-up"
+                    style="left: 27%; width: 8px; height: 8px; background: #A57FDB; animation-duration: 18s; animation-delay: -3s"></span>
+                <span class="hq-up"
+                    style="left: 41%; width: 5px; height: 5px; background: #6E86DE; animation-duration: 13s; animation-delay: -9s"></span>
+                <span class="hq-up"
+                    style="left: 55%; width: 9px; height: 9px; background: #B85C82; animation-duration: 17s; animation-delay: -12s"></span>
+                <span class="hq-up"
+                    style="left: 68%; width: 6px; height: 6px; background: #00B2E8; animation-duration: 14s; animation-delay: -2s"></span>
+                <span class="hq-up"
+                    style="left: 79%; width: 11px; height: 11px; background: #A57FDB; animation-duration: 20s; animation-delay: -8s"></span>
+                <span class="hq-up"
+                    style="left: 91%; width: 7px; height: 7px; background: #FF5A5A; animation-duration: 15s; animation-delay: -5s"></span>
+                <svg class="hq-twinkle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A57FDB"
+                    stroke-width="2.4" stroke-linecap="round" style="left: 4%; top: 18%">
+                    <path d="M12 4v16M4 12h16"></path>
+                </svg>
+                <svg class="hq-twinkle" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8FD9F2"
+                    stroke-width="2.6" stroke-linecap="round" style="right: 8%; top: 46%; animation-delay: -2s">
+                    <path d="M12 4v16M4 12h16"></path>
+                </svg>
+                <svg class="hq-twinkle" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF8A8A"
+                    stroke-width="2.4" stroke-linecap="round" style="left: 48%; top: 8%; animation-delay: -1s">
+                    <path d="M12 4v16M4 12h16"></path>
+                </svg>
+            </div>
+            <div
+                style="position: relative; max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+                <div class="hq-reveal" style="display: flex; flex-direction: column; gap: 14px; max-width: 640px">
+                    <span
+                        style="font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #8FD9F2">Como
+                        funciona</span>
+                    <h2
+                        style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 800; font-size: clamp(30px, 3.8vw, 46px); line-height: 1.1; letter-spacing: -0.025em; color: #FFFFFF">
+                        Do briefing ao site no ar em 4 etapas.</h2>
+                    <p style="margin: 0; font-size: 17px; line-height: 1.65; color: #B9BBC7">Clique em cada etapa para
+                        ver o que acontece.</p>
+                </div>
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px; align-items: stretch">
+                    <div role="list" class="hq-reveal" style="display: flex; flex-direction: column; gap: 10px">
+                        <div role="listitem">
+                            <button class="hq-step active" type="button" data-step="0" aria-pressed="true"
+                                style="--c: #FF5A5A">
+                                <span class="hq-step-num">01</span>
+                                <span style="display: flex; flex-direction: column; gap: 2px; text-align: left">
+                                    <span
+                                        style="font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">Conversa
+                                        inicial</span>
+                                    <span style="font-size: 14px; color: #B9BBC7">Entendemos seu negócio</span>
+                                </span>
+                            </button>
+                        </div>
+                        <div role="listitem">
+                            <button class="hq-step" type="button" data-step="1" aria-pressed="false"
+                                style="--c: #A57FDB">
+                                <span class="hq-step-num">02</span>
+                                <span style="display: flex; flex-direction: column; gap: 2px; text-align: left">
+                                    <span
+                                        style="font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">Proposta</span>
+                                    <span style="font-size: 14px; color: #B9BBC7">Escopo, prazo e valor</span>
+                                </span>
+                            </button>
+                        </div>
+                        <div role="listitem">
+                            <button class="hq-step" type="button" data-step="2" aria-pressed="false"
+                                style="--c: #00B2E8">
+                                <span class="hq-step-num">03</span>
+                                <span style="display: flex; flex-direction: column; gap: 2px; text-align: left">
+                                    <span
+                                        style="font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">Design
+                                        &amp; desenvolvimento</span>
+                                    <span style="font-size: 14px; color: #B9BBC7">Seu site ganha forma</span>
+                                </span>
+                            </button>
+                        </div>
+                        <div role="listitem">
+                            <button class="hq-step" type="button" data-step="3" aria-pressed="false"
+                                style="--c: #6E86DE">
+                                <span class="hq-step-num">04</span>
+                                <span style="display: flex; flex-direction: column; gap: 2px; text-align: left">
+                                    <span
+                                        style="font-family: Montserrat, sans-serif; font-weight: 700; font-size: 17px">Entrega
+                                        &amp; suporte</span>
+                                    <span style="font-size: 14px; color: #B9BBC7">No ar e acompanhado</span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hq-reveal"
+                        style="--d: .15s; border-radius: 22px; background: #26272F; border: 1px solid #34353F; padding: clamp(26px, 4vw, 40px); display: flex; flex-direction: column; gap: 18px">
+                        <div style="display: flex; align-items: center; gap: 14px">
+                            <span id="hq-step-badge" class="hq-step-badge" style="background: #FF5A5A">01</span>
+                            <span
+                                style="font-size: 13px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: #B9BBC7">Etapa
+                                <span id="hq-step-n">01</span> de 04</span>
+                        </div>
+                        <h3 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 800; font-size: clamp(24px, 2.6vw, 32px); color: #FFFFFF"
+                            id="hq-step-title">Conversa inicial</h3>
+                        <p style="margin: 0; font-size: 16.5px; line-height: 1.7; color: #CFD1DA" id="hq-step-text">Uma
+                            conversa rápida para entender seus objetivos, seu público e o que o site precisa entregar.
+                            Sem jargão técnico.</p>
+                        <ul id="hq-step-items"
+                            style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+                            <li
+                                style="display: flex; align-items: center; gap: 10px; font-size: 15.5px; color: #FFFFFF">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD9F2"
+                                    stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M5 12l5 5 9-10"></path>
+                                </svg><span>Objetivos e público-alvo</span></li>
+                            <li
+                                style="display: flex; align-items: center; gap: 10px; font-size: 15.5px; color: #FFFFFF">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD9F2"
+                                    stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M5 12l5 5 9-10"></path>
+                                </svg><span>Referências que você gosta</span></li>
+                            <li
+                                style="display: flex; align-items: center; gap: 10px; font-size: 15.5px; color: #FFFFFF">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD9F2"
+                                    stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M5 12l5 5 9-10"></path>
+                                </svg><span>Conteúdo e funcionalidades</span></li>
+                        </ul>
+                        <div style="margin-top: auto; padding-top: 18px; display: flex; gap: 6px" aria-hidden="true">
+                            <span class="hq-bar" style="background: #FF5A5A"></span><span class="hq-bar"></span><span
+                                class="hq-bar"></span><span class="hq-bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ONDAS: saída do processo -->
+        <div aria-hidden="true" class="hq-anim"
+            style="position: relative; height: clamp(100px, 11vw, 160px); background: #FFFFFF; overflow: hidden; margin-top: -1px; transform: scaleY(-1)">
+            <div class="hq-bob" style="position: absolute; inset: 0; animation-duration: 10s">
+                <div class="hq-wave hq-rev" style="animation-duration: 30s"><svg viewBox="0 0 2880 160"
+                        preserveAspectRatio="none" width="100%" height="100%">
+                        <path fill="#00B2E8" fill-opacity="0.3"
+                            d="M0 40 C 360 0, 1080 80, 1440 40 C 1800 0, 2520 80, 2880 40 V160 H0 Z"></path>
+                    </svg></div>
+            </div>
+            <div class="hq-bob" style="position: absolute; inset: 0; animation-duration: 8s; animation-delay: -4s">
+                <div class="hq-wave" style="animation-duration: 24s"><svg viewBox="0 0 2880 160"
+                        preserveAspectRatio="none" width="100%" height="100%">
+                        <path fill="#FF5A5A" fill-opacity="0.35"
+                            d="M0 70 C 480 115, 960 25, 1440 70 C 1920 115, 2400 25, 2880 70 V160 H0 Z"></path>
+                    </svg></div>
+            </div>
+            <div class="hq-bob" style="position: absolute; inset: 0; animation-duration: 12s; animation-delay: -2s">
+                <div class="hq-wave hq-rev" style="animation-duration: 19s"><svg viewBox="0 0 2880 160"
+                        preserveAspectRatio="none" width="100%" height="100%">
+                        <path fill="#A57FDB" fill-opacity="0.6"
+                            d="M0 92 C 360 60, 1080 124, 1440 92 C 1800 60, 2520 124, 2880 92 V160 H0 Z"></path>
+                    </svg></div>
+            </div>
+            <div class="hq-wave" style="animation-duration: 40s"><svg viewBox="0 0 2880 160" preserveAspectRatio="none"
+                    width="100%" height="100%">
+                    <path fill="#1C1D23" d="M0 118 C 480 140, 960 96, 1440 118 C 1920 140, 2400 96, 2880 118 V160 H0 Z">
+                    </path>
+                </svg></div>
+        </div>
+
+        <!-- FAQ -->
+        <section id="faq" style="padding: clamp(72px, 9vw, 120px) 20px; scroll-margin-top: 70px">
+            <div style="max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
+                <div class="hq-reveal"
+                    style="display: flex; flex-direction: column; gap: 14px; text-align: center; align-items: center">
+                    <span
+                        style="font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #4A5FC1">Dúvidas
+                        frequentes</span>
+                    <h2
+                        style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 800; font-size: clamp(30px, 3.8vw, 46px); line-height: 1.1; letter-spacing: -0.025em; color: #23252B">
+                        Perguntas que todo mundo faz</h2>
+                </div>
+                <div class="hq-reveal" style="--d: .1s; border-top: 1px solid #E6E7EE">
+                    <div class="hq-faq open" style="border-bottom: 1px solid #E6E7EE">
+                        <button class="hq-row" type="button" aria-expanded="true" aria-controls="hq-faq-0"
+                            style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 12px; border: none; background: transparent; cursor: pointer; text-align: left; font-family: Montserrat, sans-serif; font-weight: 700; font-size: clamp(16px, 1.7vw, 18.5px); color: #23252B; border-radius: 12px">
+                            <span>Quanto custa um site?</span>
+                            <span class="hq-faq-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                                    <path d="M12 5v14M5 12h14"></path>
+                                </svg></span>
+                        </button>
+                        <p id="hq-faq-0" class="hq-faq-a"
+                            style="margin: 0; padding: 0 12px 24px; font-size: 16px; line-height: 1.7; color: #5F6370; max-width: 720px; animation-duration: .4s">
+                            Depende do tipo de projeto e das funcionalidades. Depois de uma conversa rápida, enviamos um
+                            orçamento fechado, com tudo explicado — sem custos escondidos.</p>
+                    </div>
+                    <div class="hq-faq" style="border-bottom: 1px solid #E6E7EE">
+                        <button class="hq-row" type="button" aria-expanded="false" aria-controls="hq-faq-1"
+                            style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 12px; border: none; background: transparent; cursor: pointer; text-align: left; font-family: Montserrat, sans-serif; font-weight: 700; font-size: clamp(16px, 1.7vw, 18.5px); color: #23252B; border-radius: 12px">
+                            <span>Em quanto tempo meu site fica pronto?</span>
+                            <span class="hq-faq-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                                    <path d="M12 5v14M5 12h14"></path>
+                                </svg></span>
+                        </button>
+                        <p id="hq-faq-1" class="hq-faq-a"
+                            style="margin: 0; padding: 0 12px 24px; font-size: 16px; line-height: 1.7; color: #5F6370; max-width: 720px; animation-duration: .4s"
+                            hidden>Landing pages costumam ser mais rápidas; sites institucionais e projetos com
+                            automação levam um pouco mais. O prazo exato fica definido na proposta, antes de começarmos.
+                        </p>
+                    </div>
+                    <div class="hq-faq" style="border-bottom: 1px solid #E6E7EE">
+                        <button class="hq-row" type="button" aria-expanded="false" aria-controls="hq-faq-2"
+                            style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 12px; border: none; background: transparent; cursor: pointer; text-align: left; font-family: Montserrat, sans-serif; font-weight: 700; font-size: clamp(16px, 1.7vw, 18.5px); color: #23252B; border-radius: 12px">
+                            <span>Eu já preciso ter domínio e hospedagem?</span>
+                            <span class="hq-faq-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                                    <path d="M12 5v14M5 12h14"></path>
+                                </svg></span>
+                        </button>
+                        <p id="hq-faq-2" class="hq-faq-a"
+                            style="margin: 0; padding: 0 12px 24px; font-size: 16px; line-height: 1.7; color: #5F6370; max-width: 720px; animation-duration: .4s"
+                            hidden>Não. Podemos registrar o domínio e cuidar da hospedagem para você. Se você já tiver,
+                            usamos o que existe.</p>
+                    </div>
+                    <div class="hq-faq" style="border-bottom: 1px solid #E6E7EE">
+                        <button class="hq-row" type="button" aria-expanded="false" aria-controls="hq-faq-3"
+                            style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 12px; border: none; background: transparent; cursor: pointer; text-align: left; font-family: Montserrat, sans-serif; font-weight: 700; font-size: clamp(16px, 1.7vw, 18.5px); color: #23252B; border-radius: 12px">
+                            <span>Vou conseguir atualizar o site depois?</span>
+                            <span class="hq-faq-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                                    <path d="M12 5v14M5 12h14"></path>
+                                </svg></span>
+                        </button>
+                        <p id="hq-faq-3" class="hq-faq-a"
+                            style="margin: 0; padding: 0 12px 24px; font-size: 16px; line-height: 1.7; color: #5F6370; max-width: 720px; animation-duration: .4s"
+                            hidden>Sim. Se quiser editar textos e imagens por conta própria, entregamos com um painel
+                            fácil de usar e mostramos como. Se preferir, a gente cuida disso no plano de manutenção.</p>
+                    </div>
+                    <div class="hq-faq" style="border-bottom: 1px solid #E6E7EE">
+                        <button class="hq-row" type="button" aria-expanded="false" aria-controls="hq-faq-4"
+                            style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 12px; border: none; background: transparent; cursor: pointer; text-align: left; font-family: Montserrat, sans-serif; font-weight: 700; font-size: clamp(16px, 1.7vw, 18.5px); color: #23252B; border-radius: 12px">
+                            <span>O site vai funcionar bem no celular?</span>
+                            <span class="hq-faq-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                                    <path d="M12 5v14M5 12h14"></path>
+                                </svg></span>
+                        </button>
+                        <p id="hq-faq-4" class="hq-faq-a"
+                            style="margin: 0; padding: 0 12px 24px; font-size: 16px; line-height: 1.7; color: #5F6370; max-width: 720px; animation-duration: .4s"
+                            hidden>Sempre. Todos os projetos são responsivos e testados em celulares, tablets e
+                            computadores.</p>
+                    </div>
+                    <div class="hq-faq" style="border-bottom: 1px solid #E6E7EE">
+                        <button class="hq-row" type="button" aria-expanded="false" aria-controls="hq-faq-5"
+                            style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 12px; border: none; background: transparent; cursor: pointer; text-align: left; font-family: Montserrat, sans-serif; font-weight: 700; font-size: clamp(16px, 1.7vw, 18.5px); color: #23252B; border-radius: 12px">
+                            <span>Como funciona o pagamento?</span>
+                            <span class="hq-faq-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+                                    <path d="M12 5v14M5 12h14"></path>
+                                </svg></span>
+                        </button>
+                        <p id="hq-faq-5" class="hq-faq-a"
+                            style="margin: 0; padding: 0 12px 24px; font-size: 16px; line-height: 1.7; color: #5F6370; max-width: 720px; animation-duration: .4s"
+                            hidden>As condições ficam combinadas na proposta. Normalmente parte é paga no início e o
+                            restante na entrega.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="hq-anim" style="padding: 0 20px clamp(72px, 9vw, 120px); scroll-margin-top: 70px">
+            <div class="hq-reveal hq-contact"
+                style="max-width: 1180px; margin: 0 auto; border-radius: 28px; background: #F4F1FB; padding: clamp(28px, 5vw, 64px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: clamp(32px, 5vw, 64px); position: relative; overflow: hidden">
+                <div aria-hidden="true"
+                    style="position: absolute; left: 0; right: 0; bottom: 0; height: 160px; overflow: hidden; pointer-events: none">
+                    <div class="hq-wave" style="animation-duration: 28s"><svg viewBox="0 0 2880 160"
+                            preserveAspectRatio="none" width="100%" height="100%">
+                            <path fill="#A57FDB" fill-opacity="0.16"
+                                d="M0 60 C 360 20, 1080 100, 1440 60 C 1800 20, 2520 100, 2880 60 V160 H0 Z"></path>
+                        </svg></div>
+                    <div class="hq-wave hq-rev" style="animation-duration: 21s"><svg viewBox="0 0 2880 160"
+                            preserveAspectRatio="none" width="100%" height="100%">
+                            <path fill="#6E86DE" fill-opacity="0.14"
+                                d="M0 95 C 480 135, 960 55, 1440 95 C 1920 135, 2400 55, 2880 95 V160 H0 Z"></path>
+                        </svg></div>
+                    <div class="hq-wave" style="animation-duration: 36s"><svg viewBox="0 0 2880 160"
+                            preserveAspectRatio="none" width="100%" height="100%">
+                            <path fill="#00B2E8" fill-opacity="0.12"
+                                d="M0 122 C 360 100, 1080 144, 1440 122 C 1800 100, 2520 144, 2880 122 V160 H0 Z">
+                            </path>
+                        </svg></div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 18px; position: relative">
+                    <span
+                        style="font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #7A52C2">Vamos
+                        começar?</span>
+                    <h2
+                        style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 800; font-size: clamp(30px, 3.8vw, 46px); line-height: 1.1; letter-spacing: -0.025em; color: #23252B">
+                        Conte sua ideia e receba um orçamento sem compromisso.</h2>
+                    <p style="margin: 0; font-size: 17px; line-height: 1.7; color: #5F6370">Preencha ao lado e a
+                        mensagem já abre pronta no WhatsApp. Respondemos o mais rápido possível.</p>
+                    <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 10px">
+                        <a class="hq-ghost"
+                            href="https://wa.me/5581996473467?text=Ol%C3%A1%2C%20HostQuest!%20Gostaria%20de%20um%20or%C3%A7amento."
+                            target="_blank" rel="noopener"
+                            style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 16px; background: #FFFFFF; border: 1px solid #E4DFF2; text-decoration: none; color: #23252B">
+                            <span
+                                style="width: 42px; height: 42px; border-radius: 12px; background: #E1F5FC; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg
+                                    width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0A7FA8"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"></path>
+                                </svg></span>
+                            <span
+                                style="display: flex; flex-direction: column; min-width: 0; overflow-wrap: anywhere"><span
+                                    style="font-size: 13px; color: #5F6370">WhatsApp</span><span
+                                    style="font-weight: 600">(81) 99647-3467</span></span>
+                        </a>
+                        <a class="hq-ghost" href="mailto:contato.hostquest@gmail.com"
+                            style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 16px; background: #FFFFFF; border: 1px solid #E4DFF2; text-decoration: none; color: #23252B">
+                            <span
+                                style="width: 42px; height: 42px; border-radius: 12px; background: #FFE8E8; display: flex; align-items: center; justify-content: center; flex-shrink: 0"><svg
+                                    width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D63A3A"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                                    <path d="M3 7l9 6 9-6"></path>
+                                </svg></span>
+                            <span
+                                style="display: flex; flex-direction: column; min-width: 0; overflow-wrap: anywhere"><span
+                                    style="font-size: 13px; color: #5F6370">E-mail</span><span
+                                    style="font-weight: 600">contato.hostquest@gmail.com</span></span>
+                        </a>
+                    </div>
+                </div>
+
+                <form id="hq-form" class="hq-form"
+                    style="position: relative; background: #FFFFFF; border-radius: 22px; padding: clamp(22px, 3.5vw, 34px); display: flex; flex-direction: column; gap: 18px; box-shadow: 0 30px 60px -36px rgba(60,40,120,.35)">
+                    <div style="display: flex; flex-direction: column; gap: 8px">
+                        <label for="hq-nome" style="font-size: 14px; font-weight: 600; color: #23252B">Seu nome</label>
+                        <input id="hq-nome" class="hq-field" type="text" placeholder="Como podemos te chamar?"
+                            autocomplete="name"
+                            style="height: 50px; padding: 0 16px; border-radius: 12px; border: 1.5px solid #E2E1EC; font: inherit; font-size: 15.5px; color: #23252B; background: #FFFFFF">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 10px">
+                        <span id="hq-tipo" style="font-size: 14px; font-weight: 600; color: #23252B">O que você
+                            precisa?</span>
+                        <div role="group" aria-labelledby="hq-tipo" style="display: flex; flex-wrap: wrap; gap: 8px">
+                            <button class="hq-chip" type="button" aria-pressed="true">Site institucional</button>
+                            <button class="hq-chip" type="button" aria-pressed="false">Landing page</button>
+                            <button class="hq-chip" type="button" aria-pressed="false">Site para negócio</button>
+                            <button class="hq-chip" type="button" aria-pressed="false">Automação</button>
+                            <button class="hq-chip" type="button" aria-pressed="false">Hospedagem</button>
+                            <button class="hq-chip" type="button" aria-pressed="false">Manutenção</button>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 8px">
+                        <label for="hq-msg" style="font-size: 14px; font-weight: 600; color: #23252B">Fale um pouco
+                            sobre o projeto</label>
+                        <textarea id="hq-msg" class="hq-field" rows="4"
+                            placeholder="Ex.: tenho uma clínica e quero um site com agendamento…"
+                            style="padding: 14px 16px; border-radius: 12px; border: 1.5px solid #E2E1EC; font: inherit; font-size: 15.5px; color: #23252B; resize: vertical; background: #FFFFFF; min-height: 110px"></textarea>
+                    </div>
+                    <a id="hq-wa" class="hq-btn hq-b-slide" href="https://wa.me/5581996473467" target="_blank"
+                        rel="noopener"
+                        style="display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 0 24px; border-radius: 999px; background: #23252B; color: #FFFFFF; font-weight: 600; font-size: 16px; text-decoration: none">
+                        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"></path>
+                        </svg>
+                        Enviar pelo WhatsApp
+                    </a>
+                    <p style="margin: 0; font-size: 13px; color: #5F6370; text-align: center">Sem compromisso. Seus
+                        dados são usados apenas para responder você.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer style="border-top: 1px solid #EEEEF4; padding: 40px 20px">
+            <div
+                style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+                <img src="img/logo-hostquest.svg" alt="HostQuest" width="149" height="34"
+                    style="height: 34px; width: auto; display: block">
+                <nav aria-label="Rodapé"
+                    style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 14.5px; font-weight: 500">
+                    <a class="hq-link" href="#servicos">Serviços</a>
+                    <a class="hq-link" href="#processo">Como funciona</a>
+                    <a class="hq-link" href="#faq">Dúvidas</a>
+                    <a class="hq-link" href="#contato">Contato</a>
+                </nav>
+                <p style="margin: 0; font-size: 14px; color: #5F6370">© 2026 HostQuest. Todos os direitos reservados. ·
+                    <button type="button" class="hq-legal-link" data-legal="termos">Termos de uso</button> · <button
+                        type="button" class="hq-legal-link" data-legal="privacidade">Privacidade</button></p>
+            </div>
+        </footer>
+
     </div>
 
-    <section id="sobre" class="hunter-section">
-        <div class="hunter-container">
-            <div class="hunter-header">
-                <div class="bracket-tag">
-                    <span class="bracket-text">POR QUE TER UM SITE?</span>
-                </div>
-
-                <h2 class="hunter-title">
-                    Sua empresa merece ser encontrada<span class="dot-orange">.</span>
-                </h2>
-
-                <p class="hunter-description">
-                    Hoje, muitos clientes pesquisam uma empresa antes de entrar em contato. Um site
-                    <strong>profissional</strong> apresenta seu negócio, seus serviços e facilita o contato com novos clientes.
-                </p>
-            </div>
-
-            <div class="hunter-grid">
-                <div class="hunter-card">
-                    <div>
-                        <div class="card-top">
-                            <span class="card-number">01</span>
-                            <div class="icon-circle">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="2" y1="12" x2="22" y2="12"></line>
-                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="card-title-head">Presença digital</h3>
-                        </div>
-                        <div class="orange-divider"></div>
-                        <p class="card-text">Esteja onde seus clientes procuram.</p>
-                    </div>
-                    <div class="dots-grid"></div>
-                </div>
-
-                <div class="hunter-card">
-                    <div>
-                        <div class="card-top">
-                            <span class="card-number">02</span>
-                            <div class="icon-circle">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                    <polyline points="9 12 11 14 15 10"></polyline>
-                                </svg>
-                            </div>
-                            <h3 class="card-title-head">Credibilidade</h3>
-                        </div>
-                        <div class="orange-divider"></div>
-                        <p class="card-text">Apresente seu negócio de forma profissional e confiável.</p>
-                    </div>
-                    <div class="dots-grid"></div>
-                </div>
-
-                <div class="hunter-card">
-                    <div>
-                        <div class="card-top">
-                            <span class="card-number">03</span>
-                            <div class="icon-circle">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-                                    <polyline points="17 6 23 6 23 12"></polyline>
-                                </svg>
-                            </div>
-                            <h3 class="card-title-head">Mais oportunidades</h3>
-                        </div>
-                        <div class="orange-divider"></div>
-                        <p class="card-text">Facilite o contato com novos clientes e impulsione suas vendas.</p>
-                    </div>
-                    <div class="dots-grid"></div>
-                </div>
-            </div>
-
-            <div class="hunter-footer-divider">
-                <div class="dashed-line"></div>
-                <div class="center-logo-box">
-                    <div class="box-white"></div>
-                    <div class="box-orange"></div>
-                </div>
-                <div class="dashed-line"></div>
-            </div>
+    <dialog id="hq-legal" class="hq-dialog" aria-labelledby="hq-legal-title">
+        <div class="hq-dialog-head">
+            <h2 id="hq-legal-title">Termos de uso</h2><button type="button" class="hq-dialog-x" data-close
+                aria-label="Fechar">&times;</button>
         </div>
-    </section>
+        <div class="hq-dialog-body" id="hq-legal-body"></div>
+    </dialog>
 
-    <section id="servicos" class="services-section">
-        <div class="services-container">
-            <div class="services-header">
-                <span class="subtitle">NOSSOS SERVIÇOS</span>
-                <h2 class="title">Soluções digitais pensadas para o seu negócio.</h2>
-                <p class="description">Criamos sites modernos, responsivos e personalizados para empresas de todos os tamanhos.</p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="card-content">
-                        <div class="icon-wrapper pink">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                <line x1="3" y1="9" x2="21" y2="9"></line>
-                                <line x1="9" y1="21" x2="9" y2="9"></line>
-                            </svg>
-                        </div>
-                        <h3 class="card-title">Landing Pages</h3>
-                        <p class="card-description">Páginas focadas em apresentar um produto, serviço ou campanha, com alta conversão.</p>
-                    </div>
-                    <div class="card-image-wrapper">
-                        <img src="service-png/image-png-service-1.png" alt="Landing Page Ilustração 3D">
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="card-content">
-                        <div class="icon-wrapper blue">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
-                                <path d="M9 22v-4h6v4"></path>
-                                <line x1="8" y1="6" x2="8.01" y2="6"></line>
-                                <line x1="12" y1="6" x2="12.01" y2="6"></line>
-                                <line x1="16" y1="6" x2="16.01" y2="6"></line>
-                                <line x1="8" y1="10" x2="8.01" y2="10"></line>
-                                <line x1="12" y1="10" x2="12.01" y2="10"></line>
-                                <line x1="16" y1="10" x2="16.01" y2="10"></line>
-                                <line x1="8" y1="14" x2="8.01" y2="14"></line>
-                                <line x1="12" y1="14" x2="12.01" y2="14"></line>
-                                <line x1="16" y1="14" x2="16.01" y2="14"></line>
-                            </svg>
-                        </div>
-                        <h3 class="card-title">Sites Institucionais</h3>
-                        <p class="card-description">Uma presença profissional para apresentar sua empresa, seus serviços e informações importantes.</p>
-                    </div>
-                    <div class="card-image-wrapper">
-                        <img src="service-png/image-service-png-2.png" alt="Site Institucional Ilustração 3D">
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="card-content">
-                        <div class="icon-wrapper green">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                            </svg>
-                        </div>
-                        <h3 class="card-title">Sites para Negócios</h3>
-                        <p class="card-description">Soluções personalizadas para diferentes tipos de negócios, como restaurantes, salões, barbearias, clínicas e muito mais.</p>
-                    </div>
-                    <div class="card-image-wrapper">
-                        <img src="service-png/image-png-service-3.png" alt="Sites para Negócios Ilustração 3D">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="como-funciona" class="how-section">
-        <div class="process-container">
-            <div class="process-header">
-                <span class="tag">COMO FUNCIONA?</span>
-                <h2>Do seu contato ao seu site no ar.</h2>
-                <p>Um processo simples, transparente e focado no que realmente importa: o seu resultado.</p>
-            </div>
-
-            <div class="steps-container">
-                <div class="step-item">
-                    <div class="icon-wrapper-step">
-                        <span class="step-number">01</span>
-                        <div class="icon-box-step">
-                            <i data-lucide="message-square-more"></i>
-                        </div>
-                    </div>
-                    <h3 class="step-title">Você entra<br>em contato</h3>
-                    <p class="step-description">Fale com a nossa equipe e conte sobre o seu projeto.</p>
-                </div>
-
-                <div class="step-arrow">
-                    <i data-lucide="arrow-right" size="18"></i>
-                </div>
-
-                <div class="step-item">
-                    <div class="icon-wrapper-step">
-                        <span class="step-number">02</span>
-                        <div class="icon-box-step">
-                            <i data-lucide="lightbulb"></i>
-                        </div>
-                    </div>
-                    <h3 class="step-title">Entendemos<br>seu negócio</h3>
-                    <p class="step-description">Analisamos suas ideias, objetivos e necessidades.</p>
-                </div>
-
-                <div class="step-arrow">
-                    <i data-lucide="arrow-right" size="18"></i>
-                </div>
-
-                <div class="step-item">
-                    <div class="icon-wrapper-step">
-                        <span class="step-number">03</span>
-                        <div class="icon-box-step">
-                            <i data-lucide="code-2"></i>
-                        </div>
-                    </div>
-                    <h3 class="step-title">Desenvolvemos<br>o projeto</h3>
-                    <p class="step-description">Criamos um site moderno, responsivo e personalizado.</p>
-                </div>
-
-                <div class="step-arrow">
-                    <i data-lucide="arrow-right" size="18"></i>
-                </div>
-
-                <div class="step-item">
-                    <div class="icon-wrapper-step">
-                        <span class="step-number">04</span>
-                        <div class="icon-box-step">
-                            <i data-lucide="rocket"></i>
-                        </div>
-                    </div>
-                    <h3 class="step-title">Seu site vai<br>para o ar</h3>
-                    <p class="step-description">Você recebe seu site e já pode começar a conquistar mais clientes.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="flexibility-section">
-        <div class="flexibility-content">
-            <span class="flexibility-subtitle">FEITO PARA O SEU NEGÓCIO</span>
-            <h1 class="flexibility-title">Um site pensado<br>para a sua empresa</h1>
-            <p class="flexibility-bold-text">Cada negócio tem sua própria identidade.</p>
-            <p class="flexibility-description">
-                Criamos sites personalizados de acordo com a identidade, os objetivos e as necessidades<br> da sua empresa, 
-                proporcionando uma presença digital profissional e uma experiência<br> clara para seus clientes.
-            </p>
-        </div>
-        <div class="flexibility-image-container"></div>
-    </section>
-
-    <section class="hero-video-section">
-        <video class="bg-video" autoplay loop muted playsinline disablePictureInPicture>
-            <source src="video/video-empresario.mp4" type="video/mp4">
-            Seu navegador não suporta vídeos HTML5.
-        </video>
-
-        <div class="hero-overlay"></div>
-
-        <div class="hero-content">
-            <h1 class="hero-title">
-                Pronto para levar seu negócio para a internet?
-            </h1>
-
-            <p class="hero-description">
-                Vamos criar um site profissional, personalizado e pensado para apresentar sua empresa da melhor forma.
-            </p>
-
-            <div class="hero-actions">
-                <a class="btn-hero-secondary">
-                    Conhecer nossos serviços &rarr;
-                </a>
-
-                <a href="https://web.whatsapp.com/send?phone=558196473467" class="btn-hero-primary" onclick="gtag('event', 'clique_orcamento')">
-
-                    Solicitar orçamento
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img class="footer-logo" src="image/hostquest_logo.png" alt="HostQuest Logo">
-                    <p class="footer-description">
-                        Construímos websites e automações para impulsionar a sua empresa no mercado global.
-                    </p>
-                </div>
-
-                <div class="footer-col">
-                    <h4 class="footer-title">Navegação</h4>
-                    <ul class="footer-links">
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#sobre">Sobre Nós</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#como-funciona">Como Funciona</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4 class="footer-title">Serviços</h4>
-                    <ul class="footer-links">
-                        <li><a href="#servicos">Landing Pages</a></li>
-                        <li><a href="#servicos">Sites Institucionais</a></li>
-                        <li><a href="#servicos">Sites para Negócios</a></li>
-                        <li><a href="#servicos">Automações Web</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4 class="footer-title">Contato</h4>
-                    <ul class="footer-contact">
-                        <li>
-                            <i data-lucide="mail"></i>
-                            <span>contato.hostquest@gmail.com</span>
-                        </li>
-                        <li>
-                            <i data-lucide="phone"></i>
-                            <span>+55 (81) 9 9647-3467</span>
-                        </li>
-                        <li>
-                            <i data-lucide="map-pin"></i>
-                            <span>Atendimento Global / Remoto</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-divider"></div>
-
-            <div class="footer-bottom">
-                <p class="copyright">
-                    &copy; 2026 <strong>HostQuest</strong>. Todos os direitos reservados.
-                </p>
-                <div class="footer-legal">
-                    <a href="javascript:void(0)" onclick="openLegalModal('termos')">Termos de Uso</a>
-                    <span>•</span>
-                    <a href="javascript:void(0)" onclick="openLegalModal('privacidade')">Política de Privacidade</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div id="legal-modal" class="legal-modal-overlay">
-        <div class="legal-modal-box">
-            <button type="button" class="legal-modal-close" id="modal-close-btn" aria-label="Fechar">&times;</button>
-            <div class="legal-modal-header">
-                <h3 id="modal-title">Título do Documento</h3>
-            </div>
-            <div class="legal-modal-body" id="modal-body-content">
-            </div>
-            <div class="legal-modal-footer">
-                <button type="button" class="legal-modal-btn" id="modal-ok-btn">Entendido</button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        lucide.createIcons();
-    </script>
-
-    <script src="script/script.js"></script>
-    <script src="script/menu.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
