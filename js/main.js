@@ -173,6 +173,13 @@
   });
   updateWa();
 
+  /* ---------- Cliques que valem medir no Google Analytics (ex.: "Ver site no ar" dos projetos) ---------- */
+  document.querySelectorAll('[data-evento]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      if (typeof gtag === 'function') gtag('event', el.getAttribute('data-evento'), { projeto: el.getAttribute('data-projeto') || '' });
+    });
+  });
+
   /* ---------- Termos de uso e Privacidade ---------- */
   var LEGAL = {
     termos: {
